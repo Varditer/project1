@@ -25,17 +25,33 @@ public class Main {
         }
 
 
-        System.out.print("Task 6 Create an array and fill it. Print count of elements which can be divided by 2.")
+        System.out.print("Task 6 Create an array and fill it. Print count of elements which can be divided by 2.");
         int [] masiv = {4, 6, 8,10,20,5,7,1};
         int count = 0;
-        for (int i = 0; i < masiv.length; i++){
-            if(masiv [i] % 2==0) {
+        for (int i = 0; i < masiv.length; i++) {
+            if (masiv[i] % 2 == 0) {
                 count++;
             }
             System.out.print(array[i]);
+        }
 
-
-
-
+        float[]array6 ={25,2f, 29.52f ,467.23f,17,24.20f,427.90f, 46.9f, 22.3f, 123.4f };
+        for (int j = 0; j < array6.length ; j++) {
+            if (array6[j] > 24.12 &&  array6[j] < 467.23){
+               System.out.println(array6[j]);
+            }
+        }
+        int[] array3 = new int[20];
+        int x = -19;
+        for (int i = 0; i < array3.length; i++) {
+          array3[i]= x;
+          x=x+2;
+          System.out.println(array3[i]);
+        }
+        int y = 2;
+        for (int i = 1; i<=10; i++) {
+            int z = i * y;
+            System.out.println(y+ " * " + i + " = " + z);
+        }
     }
 }
